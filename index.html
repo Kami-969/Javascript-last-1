@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Davaleba Last</title>
+
+        <style>
+            #popup
+            {
+              background-color: rgba(0,0,0,0.7);
+              position: fixed;
+              height: 100vh;
+              width: 100%;
+              top: 0;
+              left: 0;
+              display: none;
+            }
+            #popup.active{
+              display: block;
+            }
+            #thumbrnail 
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            p 
+            {
+                font-size: 20px;
+            }
+
+            .styler 
+            {
+                border: 5px solid black;
+                margin: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+            #cancel
+            {
+                color:#ffffff;
+                font-size: 50px;
+                position: absolute;
+                right: 0;
+                padding-right: 20px;
+                cursor: pointer;
+            }
+            #popupcontainer p
+            {
+                color:#ffffff;
+                margin: 10px;
+                font-size: 20px;               
+                padding-right: 20px;
+            }
+            #popupcontainer
+            {
+                text-align: center;
+            }
+            #loading
+            {
+                font-size: 100px !important;
+                margin-top: 300px !important;
+            }
+        </style>
+    </head>
+    <body >
+        <div id="title">
+            <div id="thumbrnail" class=""></div>
+        </div>
+
+        <div id="popup">
+            <p id="cancel">X</p>
+
+            <div id="popupcontainer" class=""></div>
+        </div>
+
+        <script src="Day1HomeWork.js"></script>
+    </body>
+</html>
